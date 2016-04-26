@@ -16,6 +16,10 @@ public class SevenDayActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String location = intent.getStringExtra("location");
+        getWeather(location);
+    }
 
+    private void getWeather(String location) {
+        final OpenWeatherService openWeatherService = new OpenWeatherService();
     }
 }
